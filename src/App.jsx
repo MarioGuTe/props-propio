@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to React props</h1>
-      <Greetings />
+      <Greetings firstName={"Mario"} lastName={"Gutiérrez"} age={33} />
     </div>
   );
 }
