@@ -27,6 +27,9 @@ const Greetings = (props) => {
       <h2>
         Hola mi nombre es {firstName} {lastName} y tengo {age} años
       </h2>
+      {/* ocupamos la propiedad "children" que pertence a props para pintar los tag img dentro de la
+importación en App.jsx*/}
+      {props.children}
     </div>
   );
 };
