@@ -1,3 +1,5 @@
+import propTypes from "prop-types";
+
 // Manejo de props
 // Tip Clean Code: Se permite recibir como parámetro de función hasta 4 props sueltos
 // si el número es mayor a 4 optar por las desestructuración de props
@@ -30,3 +32,10 @@ const Greetings = (props) => {
 };
 
 export default Greetings;
+
+// ocupamos propTypes para definir el data-type de las props
+Greetings.propTypes = {
+  firstName: propTypes.string,
+  lastName: propTypes.string,
+  age: propTypes.number,
+};
